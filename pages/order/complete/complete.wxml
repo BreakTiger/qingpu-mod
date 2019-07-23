@@ -1,0 +1,8 @@
+<!-- 订单完成 -->
+
+<view class='container'>
+
+  <image src='/imgs/order/icon1.png' class='icon'></image>
+  <text>订单完成</text>
+
+</view>

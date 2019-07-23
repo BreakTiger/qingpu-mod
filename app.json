@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/scan/scan",
+    "pages/code/code",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/order/complete/complete",
+    "pages/order/unfinished/unfinished",
+    "pages/card/card"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "清浦校园-门店",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/scan/scan",
+        "text": "扫码",
+        "iconPath": "imgs/tab/icon1.png",
+        "selectedIconPath": "imgs/tab/icon2.png"
+      },
+      {
+        "pagePath": "pages/code/code",
+        "text": "取货码",
+        "iconPath": "imgs/tab/icon3.png",
+        "selectedIconPath": "imgs/tab/icon4.png"
+      }
+    ]
+  }
+}

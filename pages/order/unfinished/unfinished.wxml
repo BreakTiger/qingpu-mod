@@ -1,0 +1,17 @@
+<!-- 非门店订单 -->
+
+<view class='container'>
+
+  <image src='/imgs/order/icon2.png' class='icon'></image>
+  <text class='hint'>本订单信息非本门店订单</text>
+
+  <view class='infobox'>
+    <text class='title'>请前往:</text>
+    <view class='address-box'>
+      <text>{{name}}店</text>
+      <text>{{address}}</text>
+    </view>
+
+  </view>
+
+</view>

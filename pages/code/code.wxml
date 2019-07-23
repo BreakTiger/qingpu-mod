@@ -1,0 +1,22 @@
+<!-- 取货码 -->
+
+
+
+<view class='top-title'>请在输入框内输入8位取货码</view>
+
+<form bindsubmit="tocode">
+
+  <view class='content'>
+
+    <block wx:for="{{Length}}" wx:key="item">
+      <input type='number' class='iptbox' value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+    </block>
+  </view>
+
+  <input type='number' name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+
+  <view class='btn-box'>
+    <button class="btn" style='background-color: #a9a9a9;' formType="reset">重置</button>
+    <button class="btn" style='background-color: #2b6bb3;' formType="submit">确定</button>
+  </view>
+</form>

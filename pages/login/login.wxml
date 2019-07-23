@@ -1,0 +1,25 @@
+<!-- 门店登陆 -->
+
+<view class='login'>
+  <image src='/imgs/login/login.png'></image>
+</view>
+
+<form bindsubmit='landingsubmit' class='box'>
+  <view class='logo'>
+   <image src='/imgs/login/logo.png'></image>
+  </view>
+  <view class='name'>
+    <text>清浦</text>
+    <text>QingPu</text>
+  </view>
+  <view class='bar'>
+   <text>账   号</text>
+   <input class='input' name='username' placeholder-class='moren' placeholder='请输入账号'></input>
+  </view>
+  <view class='bar'>
+   <text>密   码</text>
+   <input class='input' name='password' type='password' placeholder-class='moren' placeholder='请输入密码'></input>
+  </view>
+  <view class='btn'><button formType="submit">登录</button></view>
+  
+</form>

@@ -1,0 +1,89 @@
+<!-- 订单详情 -->
+
+<view class='container'>
+
+  <!-- 顶部状态栏 -->
+  <view class='top-status-line'>
+    <image src='/imgs/order/status.png' class='icon'></image>
+    <text>等待自取</text>
+  </view>
+
+  <!-- 收货的门店地址 -->
+  <view class='address-box'>
+    <view class='address-info'>
+      <image src='/imgs/order/addrss.png' class='adrs'></image>
+      <view class='info-box'>
+        <view class='info'>买家信息：{{allinfo.shippingPhone}}</view>
+        <view class='reala'>自取门店信息：{{allinfo.storeName}}（{{allinfo.address}}）</view>
+      </view>
+    </view>
+    <image class='feng' src='/imgs/order/feng.png'></image>
+  </view>
+
+  <!-- 商品信息 -->
+  <view class='goods'>
+    <view class='goodsbox'>
+      <image src='{{allinfo.products[0].thumb}}' class='thumb'></image>
+      <view class='goodsinfo '>
+        <view class='gdmsg'>{{allinfo.products[0].name}}</view>
+        <view class='color'>{{allinfo.products[0].options[0].name}}:{{allinfo.products[0].options[0].value}}</view>
+        <view class='size'>{{allinfo.products[0].options[1].name}}:{{allinfo.products[0].options[1].value}}</view>
+        <view class='price'>
+          <text>会员价：￥{{allinfo.total}}</text>
+          <text>X{{allinfo.products[0].quantity}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 打印图片+订单总价+实付款+将获得积分 -->
+  <view class='print'>
+    <text>打印图片</text>
+    <image src='{{allinfo.watermark}}' class='print-thumb'></image>
+  </view>
+
+  <view class='oderxj'>
+    <text>订单总价</text>
+    <text>￥{{amount}}</text>
+  </view>
+
+  <view class='oderxj'>
+    <text>实付款</text>
+    <text>￥{{amount}}</text>
+  </view>
+
+  <view class='oderxj'>
+    <text>将获得积分</text>
+    <text>{{allinfo.products[0].presentedPointTotal}}</text>
+  </view>
+
+  <view class='ordernum'>订单编号：{{allinfo.tradeNo}}</view>
+  <view class='ordernum'>创建时间：{{allinfo.createdTime}}</view>
+  <view class='ordernum'>交易流水号：{{allinfo.outTradeNo}}</view>
+  <view class='ordernum' style='margin-bottom: 100rpx;'>付款时间：{{allinfo.paymentTime}}</view>
+
+  <!-- 按钮 -->
+  <view class='btn' bindtap='getgooods'>已收货</view>
+
+</view>
+
+<!-- 弹窗 -->
+<!-- <view class='bg' wx:if=''>
+
+  <view class='info-window'>
+    <view class='window-line'>
+      <text>本订单信息非本门店订单</text>
+      <image src='/imgs/order/colse.png' class='close' bindtap='close'></image>
+    </view>
+
+    <view>
+      <text class='title'>请前往：</text>
+      <view class='hint-info'>
+        <text>XXXX</text>
+        <text>(XXXXXX)</text>
+      </view>
+    </view>
+
+  </view>
+
+</view> -->

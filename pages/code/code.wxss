@@ -1,0 +1,46 @@
+.top-title {
+  font-size: 28rpx;
+  margin-top: 70rpx;
+  margin-bottom: 65rpx;
+  margin-left: 40rpx;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.iptbox {
+  width: 70rpx;
+  height: 90rpx;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 42rpx;
+  color: #2b6bb3;
+}
+
+.ipt {
+  width: 0;
+  height: 0;
+}
+
+.btn-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn {
+  width: 240rpx;
+  height: 83rpx;
+  line-height: 83rpx;
+  font-size: 29rpx;
+  color: #fff;
+}

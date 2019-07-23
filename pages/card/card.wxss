@@ -1,0 +1,122 @@
+/* 整体容器 */
+
+.container {
+  width: 750rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 顶部容器 */
+
+.top-box {
+  width: 750rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 背景 */
+
+.bk {
+  width: 750rpx;
+  height: 250rpx;
+}
+
+/* 卡片 */
+
+.card-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: -200rpx;
+}
+
+/* 图片 */
+
+.card {
+  width: 579rpx;
+  height: 355rpx;
+}
+
+/* 卡片信息 */
+
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 124rpx;
+  left: 75rpx;
+}
+
+/* 文字 */
+
+.cardinfo text {
+  font-size: 30rpx;
+  color: #754716;
+  margin-bottom: 30rpx;
+}
+
+.cardinfo .numbers {
+  margin-bottom: 0rpx;
+  margin-left: 138rpx;
+}
+
+/* 权限开发列表 */
+
+.openList {
+  width: 750rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+/* 选中按钮 */
+
+.check {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 15rpx;
+}
+
+/* 文字 */
+
+.list-item text {
+  font-size: 30rpx;
+  color: #754716;
+}
+
+.list-item .privilege {
+  width: 545rpx;
+}
+
+/* 使用次数 */
+
+.list-item .time {
+  color: #ff4b4b;
+}
+
+.updata {
+  font-size: 30rpx;
+  color: #fff;
+  width: 570rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #bb9b66;
+  position: fixed;
+  bottom: 50rpx;
+  border-radius: 10rpx;
+}

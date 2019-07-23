@@ -1,0 +1,45 @@
+<!-- 会员特权详情 -->
+
+<!-- 门店人员扫描会员卡详情页面中的二维码后进入的页面 -->
+
+<view class='container'>
+
+
+  <view class='top-box'>
+    <!-- 背景图 -->
+    <image src='/imgs/order/bk.png' class='bk'></image>
+    <!-- 卡片信息 -->
+    <view class='card-box'>
+
+      <image src='/imgs/order/card2.png' class='card'></image>
+
+      <view class='cardinfo'>
+        <text>会员昵称:{{name}}</text>
+        <text>手机号码:{{phone}}</text>
+        <text class='numbers'>会员卡号:{{cardno}}</text>
+      </view>
+    </view>
+
+  </view>
+
+  <!-- 权限开发列表 -->
+  <view class='openList'>
+    <block wx:for='{{powerlist}}' wx:key='listid'>
+
+      <view class='list-item'>
+        <!-- 选择按钮 -->
+        <!-- 判断:是否选中,用更新各权限的状态来判断 -->
+        <image src='/imgs/order/uncheck.png' class='check' bindtap='onCheckTap' data-index='{{index}}' wx:if='{{item.checked==0}}'></image>
+        <image src='/imgs/order/selected.png' class='check' bindtap='onCheckTap' data-index='{{index}}' wx:if='{{item.checked==1}}'></image>
+        <text class='privilege'>{{item.id}}.{{item.title}}</text>
+        <text class='time'>( {{item.times}} )</text>
+      </view>
+
+    </block>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class='updata' bindtap='onUpTap'>提交</view>
+
+
+</view>
